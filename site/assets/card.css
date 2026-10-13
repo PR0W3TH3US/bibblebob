@@ -1,0 +1,98 @@
+/* Card metrics mirror app/lib/card/card_view.dart. Change both together. */
+.card {
+  --muted: color-mix(in srgb, var(--text) 68%, transparent);
+  --hair: color-mix(in srgb, var(--text) 12%, transparent);
+  --tile: color-mix(in srgb, var(--text) 7%, transparent);
+  background: var(--bg);
+  color: var(--text);
+  padding: 28px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+  -webkit-font-smoothing: antialiased;
+}
+.card * { box-sizing: border-box; }
+.card p, .card h1 { margin: 0; }
+.card .ic { width: 20px; height: 20px; flex: none; }
+
+/* ---------- header ---------- */
+.hdr { display: flex; flex-direction: column; }
+.hdr-center .hdr, .hdr-banner .hdr { align-items: center; text-align: center; }
+.hdr-left .hdr, .hdr-split .hdr { align-items: flex-start; text-align: left; }
+.logo { max-height: 36px; max-width: 160px; object-fit: contain; margin-bottom: 16px; }
+.face { width: 104px; height: 104px; object-fit: cover; margin-bottom: 14px; background: var(--tile); }
+.hdr-left .face { width: 80px; height: 80px; }
+.face-circle .face { border-radius: 50%; }
+.face-rounded .face { border-radius: 22%; }
+.face-square .face { border-radius: 8%; }
+.name { font-size: var(--name-size); font-weight: 700; line-height: 1.15; }
+.title { font-size: 15px; color: var(--muted); margin-top: 4px; line-height: 1.35; }
+.business { font-size: 15px; font-weight: 700; margin-top: 2px; line-height: 1.35; }
+
+.split-row { display: flex; align-items: center; gap: 16px; width: 100%; }
+.hdr-split .face { width: 88px; height: 88px; margin: 0; }
+.split-row .hdr-text { flex: 1; min-width: 0; }
+
+.band {
+  align-self: stretch;
+  height: 112px;
+  margin: -28px -24px 0;
+  background: var(--accent);
+  display: flex;
+  align-items: flex-start;
+  padding: 16px;
+}
+.band .logo { max-height: 32px; margin: 0; }
+.hdr-banner .face { margin-top: -52px; border: 4px solid var(--bg); box-sizing: content-box; }
+.hdr-banner .no-face .hdr-text { margin-top: 16px; }
+
+/* ---------- contact + description ---------- */
+.contact { display: flex; flex-direction: column; }
+.hdr-center .contact, .hdr-banner .contact { align-items: center; }
+.contact-row {
+  display: inline-flex; align-items: center; gap: 12px; min-height: 44px;
+  color: var(--text); text-decoration: none; font-size: 15px;
+}
+.contact-row .ic { color: var(--accent); }
+.desc { font-size: 15px; line-height: 1.5; color: var(--muted); white-space: pre-line; }
+.hdr-center .desc, .hdr-banner .desc { text-align: center; }
+
+/* ---------- links ---------- */
+.links { display: flex; flex-direction: column; gap: 10px; }
+.link-list { display: flex; flex-direction: column; gap: 10px; }
+.link { display: flex; align-items: center; text-decoration: none; font-size: 16px; font-weight: 700; position: relative; }
+.link[hidden] { display: none; }
+.link-label { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.links-pill .link { height: 52px; border-radius: 26px; background: var(--accent); color: var(--on-accent); padding: 0 52px; }
+.links-pill .link .ic { position: absolute; left: 18px; }
+.links-pill .link-label { text-align: center; }
+
+.links-outline .link { height: 52px; border-radius: 14px; border: 1.5px solid var(--accent); color: var(--text); padding: 0 52px; }
+.links-outline .link .ic { position: absolute; left: 16px; color: var(--accent); }
+.links-outline .link-label { text-align: center; }
+
+.links-list .link-list { gap: 0; }
+.links-list .link { height: 52px; gap: 14px; color: var(--text); border-bottom: 1px solid var(--hair); font-weight: 400; }
+.links-list .link .ic { width: 22px; height: 22px; color: var(--accent); }
+.links-list .link .chev { color: var(--muted); width: 20px; height: 20px; }
+
+.links-grid .link-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.links-grid .link {
+  flex-direction: column; justify-content: center; gap: 8px; height: 88px;
+  border-radius: 16px; background: var(--tile); color: var(--text); font-size: 14px; padding: 0 10px;
+}
+.links-grid .link .ic { width: 26px; height: 26px; color: var(--accent); }
+.links-grid .link-label { flex: none; max-width: 100%; text-align: center; }
+
+.more {
+  align-self: center; display: inline-flex; align-items: center; gap: 4px; height: 44px;
+  background: none; border: 0; color: var(--accent); font: inherit; font-size: 15px; font-weight: 700; cursor: pointer;
+}
+.more .ic { width: 20px; height: 20px; }
+.card a:focus-visible, .card button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }

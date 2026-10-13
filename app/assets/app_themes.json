@@ -1,0 +1,14 @@
+{
+  "base": {
+    "background": "#0B0B0F",
+    "surface": "#17171C",
+    "raised": "#222229",
+    "text": "#F2F2F5",
+    "secondaryText": "#9A9AA5"
+  },
+  "themes": [
+    { "id": "purple",     "name": "Purple",     "accent": "#A855F7", "onAccent": "#FFFFFF" },
+    { "id": "orange",     "name": "Orange",     "accent": "#FF8A1F", "onAccent": "#000000" },
+    { "id": "light-blue", "name": "Light blue", "accent": "#4FC3F7", "onAccent": "#000000" }
+  ]
+}

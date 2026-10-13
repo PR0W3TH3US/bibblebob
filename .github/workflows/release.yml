@@ -1,0 +1,40 @@
+# Builds the signed APK and attaches it to a GitHub Release as bibblebob.apk.
+# Trigger: push a tag like v1.0.0 (git tag v1.0.0 && git push origin v1.0.0).
+# Needs the secrets and variable described in DEPLOY.md step 7.
+name: Release APK
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: app } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: 17 }
+      - uses: subosito/flutter-action@v2
+        with: { flutter-version: 3.47.7, channel: stable }
+      - name: Restore signing key
+        run: echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > "$RUNNER_TEMP/release.jks"
+      - name: Build APK
+        env:
+          BIBBLEBOB_KEYSTORE: ${{ runner.temp }}/release.jks
+          BIBBLEBOB_KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          BIBBLEBOB_KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          BIBBLEBOB_KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          flutter build apk --release \
+            --build-name="$VERSION" --build-number="${{ github.run_number }}" \
+            --dart-define=SITE_BASE="${{ vars.SITE_BASE || 'https://bibblebob.pages.dev' }}"
+          cp build/app/outputs/flutter-apk/app-release.apk "$GITHUB_WORKSPACE/bibblebob.apk"
+      - name: Publish release
+        working-directory: ${{ github.workspace }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" bibblebob.apk --title "bibblebob $GITHUB_REF_NAME" --generate-notes

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Splash before Android 12: dark background with the logo in the middle. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><color android:color="#0B0B0F" /></item>
+    <item android:drawable="@drawable/ic_launcher_foreground" android:gravity="center"
+        android:width="216dp" android:height="216dp" />
+</layer-list>

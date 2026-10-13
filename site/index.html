@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>bibblebob</title>
+  <meta name="description" content="Digital business cards on an NFC tag, plus an offline card organiser. No accounts.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0B0B0F">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <main>
+    <section class="landing">
+      <img class="landing-logo" src="/assets/logo.svg" alt="" width="96" height="96">
+      <h1>bibble<span>bob</span></h1>
+      <p>Your business card on an NFC tag, and every card you receive in one offline list on your phone.</p>
+      <ul>
+        <li>Make as many cards as you like and write any of them to a tag.</li>
+        <li>Tap someone’s tag to save their card, or scan a paper card.</li>
+        <li>No accounts. Your contacts never leave your phone.</li>
+      </ul>
+      <a class="btn btn-accent" id="get-app" href="#">Get the Android app</a>
+    </section>
+  </main>
+  <script type="module">
+    import { APK_URL } from '/assets/config.js';
+    document.getElementById('get-app').href = APK_URL;
+  </script>
+</body>
+</html>

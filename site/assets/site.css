@@ -1,0 +1,59 @@
+/* Page chrome. Same dark base as the app; purple is the default accent. */
+:root {
+  --base-bg: #0B0B0F;
+  --base-surface: #17171C;
+  --base-raised: #222229;
+  --base-text: #F2F2F5;
+  --base-secondary: #9A9AA5;
+  --page-accent: #A855F7;
+  --page-on-accent: #FFFFFF;
+  --page-text: var(--base-text);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body {
+  background: var(--base-bg);
+  color: var(--page-text);
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+main { min-height: 100vh; display: flex; flex-direction: column; padding-bottom: 32px; }
+
+.btn {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  width: 100%; height: 52px; border-radius: 26px; border: 0;
+  font: inherit; font-size: 16px; font-weight: 700; text-decoration: none; cursor: pointer;
+}
+.btn .ic { width: 20px; height: 20px; }
+.btn-accent { background: var(--page-accent); color: var(--page-on-accent); }
+.btn-ghost { background: transparent; color: var(--page-text); border: 1.5px solid color-mix(in srgb, var(--page-text) 30%, transparent); }
+.btn:disabled { opacity: .6; }
+.btn:focus-visible { outline: 2px solid var(--page-accent); outline-offset: 3px; }
+
+.actions { width: 100%; max-width: 440px; margin: 8px auto 0; padding: 0 24px; display: flex; flex-direction: column; gap: 10px; }
+.foot { text-align: center; font-size: 13px; opacity: .6; margin: 14px 0 0; }
+.foot a { color: inherit; }
+
+/* Own-link card and messages use the base theme. */
+.own, .message { width: 100%; max-width: 440px; margin: 0 auto; padding: 72px 24px 24px; text-align: center; }
+.own-name { font-size: 30px; line-height: 1.15; margin: 0; }
+.own-business { color: var(--base-secondary); font-size: 16px; margin: 6px 0 0; }
+.own-links { display: flex; flex-direction: column; gap: 10px; margin-top: 32px; }
+.message h1 { font-size: 24px; margin: 0 0 8px; }
+.message p { color: var(--base-secondary); line-height: 1.5; margin: 0 0 28px; }
+.message .btn + .btn { margin-top: 10px; }
+
+.loading { margin: auto; width: 28px; height: 28px; border-radius: 50%; border: 3px solid var(--base-raised); border-top-color: var(--page-accent); animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Landing page */
+.landing { max-width: 560px; margin: 0 auto; padding: 72px 24px; }
+.landing-logo { display: block; width: 96px; height: 96px; margin: 0 0 20px -8px; }
+.landing h1 { font-size: 40px; margin: 0 0 12px; letter-spacing: -0.02em; }
+.landing h1 span { color: var(--page-accent); }
+.landing p { color: var(--base-secondary); font-size: 17px; line-height: 1.55; }
+.landing ul { color: var(--base-secondary); line-height: 1.8; padding-left: 20px; margin: 24px 0 32px; }
+.landing .btn { max-width: 280px; }
+.save-hint { text-align: center; font-size: 13px; opacity: .75; margin: -2px 0 2px; }
+.save-hint[hidden] { display: none; }

@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.bibblebob.app",
+      "sha256_cert_fingerprints": [
+        "30:FC:AE:68:52:B2:0B:39:B8:78:24:F0:2D:F3:70:4B:23:BE:18:38:EB:D2:15:0A:52:01:75:6A:8F:49:C9:4C"
+      ]
+    }
+  }
+]

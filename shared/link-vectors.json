@@ -1,0 +1,259 @@
+[
+  {
+    "name": "full template card, unlimited",
+    "card": {
+      "type": "template",
+      "id": "a1b2c3",
+      "name": "Ada Lovelace",
+      "title": "Analytical Engineer",
+      "business": "Babbage & Co",
+      "phone": "+44 20 7946 0958",
+      "email": "ada.lovelace@gmail.com",
+      "description": "I write programs for machines that do not exist yet.\nAsk me about Bernoulli numbers.",
+      "links": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/ada",
+          "icon": "linkedin"
+        },
+        {
+          "label": "My site",
+          "url": "https://ada.dev/",
+          "icon": "web"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://instagram.com/ada",
+          "icon": "instagram"
+        }
+      ],
+      "templateId": "banner",
+      "style": {
+        "bg": "#101418",
+        "text": "#F3F4F6",
+        "accent": "#60A5FA",
+        "fontId": "poppins"
+      }
+    },
+    "maxBytes": null,
+    "payload": "IKGywxEAAQxBZGEgTG92ZWxhY2UEEKRLILeUawlYBQ1hZGEubG92ZWxhY2UEAwxCYWJiYWdlICYgQ28CE0FuYWx5dGljYWwgRW5naW5lZXIHAwUBBWFkYQAHAQcCYWRhHHYvB015IHNpdGUHAgUCBmFkYQAGVEkgd3JpdGUgcHJvZ3JhbXMgZm9yIG1hY2hpbmVzIHRoYXQgZG8gbm90IGV4aXN0IHlldC4KQXNrIG1lIGFib3V0IEJlcm5vdWxsaSBudW1iZXJzLg",
+    "bytes": 202,
+    "omitted": [],
+    "decoded": {
+      "v": 1,
+      "type": "template",
+      "id": "a1b2c3",
+      "name": "Ada Lovelace",
+      "links": [
+        {
+          "url": "https://www.linkedin.com/in/ada",
+          "icon": "linkedin",
+          "label": "LinkedIn"
+        },
+        {
+          "url": "https://ada.dev/",
+          "icon": "web",
+          "label": "My site"
+        },
+        {
+          "url": "https://instagram.com/ada",
+          "icon": "instagram",
+          "label": "Instagram"
+        }
+      ],
+      "templateId": "banner",
+      "style": {
+        "bg": "#101418",
+        "text": "#F3F4F6",
+        "accent": "#60A5FA",
+        "fontId": "poppins"
+      },
+      "phone": "+44 20 7946 0958",
+      "email": "ada.lovelace@gmail.com",
+      "business": "Babbage & Co",
+      "title": "Analytical Engineer",
+      "description": "I write programs for machines that do not exist yet.\nAsk me about Bernoulli numbers."
+    }
+  },
+  {
+    "name": "full template card on NTAG213",
+    "card": {
+      "type": "template",
+      "id": "a1b2c3",
+      "name": "Ada Lovelace",
+      "title": "Analytical Engineer",
+      "business": "Babbage & Co",
+      "phone": "+44 20 7946 0958",
+      "email": "ada.lovelace@gmail.com",
+      "description": "I write programs for machines that do not exist yet.\nAsk me about Bernoulli numbers.",
+      "links": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/ada",
+          "icon": "linkedin"
+        },
+        {
+          "label": "My site",
+          "url": "https://ada.dev/",
+          "icon": "web"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://instagram.com/ada",
+          "icon": "instagram"
+        }
+      ],
+      "templateId": "banner",
+      "style": {
+        "bg": "#101418",
+        "text": "#F3F4F6",
+        "accent": "#60A5FA",
+        "fontId": "poppins"
+      }
+    },
+    "maxBytes": 82,
+    "payload": "IKGywxEAAQxBZGEgTG92ZWxhY2UEEKRLILeUawlYBQ1hZGEubG92ZWxhY2UEAwxCYWJiYWdlICYgQ28CE0FuYWx5dGljYWwgRW5naW5lZXI",
+    "bytes": 80,
+    "omitted": [
+      "link 1",
+      "link 2",
+      "link 3",
+      "description"
+    ],
+    "decoded": {
+      "v": 1,
+      "type": "template",
+      "id": "a1b2c3",
+      "name": "Ada Lovelace",
+      "links": [],
+      "templateId": "banner",
+      "style": {
+        "bg": "#101418",
+        "text": "#F3F4F6",
+        "accent": "#60A5FA",
+        "fontId": "poppins"
+      },
+      "phone": "+44 20 7946 0958",
+      "email": "ada.lovelace@gmail.com",
+      "business": "Babbage & Co",
+      "title": "Analytical Engineer"
+    }
+  },
+  {
+    "name": "custom colours, unicode",
+    "card": {
+      "type": "template",
+      "id": "00ff10",
+      "name": "Zoë Ñúñez 李",
+      "title": "Analytical Engineer",
+      "business": "Babbage & Co",
+      "phone": "+44 20 7946 0958",
+      "email": "ada.lovelace@gmail.com",
+      "description": "",
+      "links": [],
+      "templateId": "spotlight",
+      "style": {
+        "bg": "#123456",
+        "text": "#FEDCBA",
+        "accent": "#00FF00",
+        "fontId": "dm-serif"
+      }
+    },
+    "maxBytes": null,
+    "payload": "KAD_EHYSNFb-3LoA_wABEVpvw6sgw5HDusOxZXog5p2OBBCkSyC3lGsJWAUNYWRhLmxvdmVsYWNlBAMMQmFiYmFnZSAmIENvAhNBbmFseXRpY2FsIEVuZ2luZWVy",
+    "bytes": 93,
+    "omitted": [],
+    "decoded": {
+      "v": 1,
+      "type": "template",
+      "id": "00ff10",
+      "name": "Zoë Ñúñez 李",
+      "links": [],
+      "templateId": "spotlight",
+      "style": {
+        "bg": "#123456",
+        "text": "#FEDCBA",
+        "accent": "#00FF00",
+        "fontId": "dm-serif"
+      },
+      "phone": "+44 20 7946 0958",
+      "email": "ada.lovelace@gmail.com",
+      "business": "Babbage & Co",
+      "title": "Analytical Engineer"
+    }
+  },
+  {
+    "name": "own-link, one link, redirect",
+    "card": {
+      "type": "links",
+      "id": "ffffff",
+      "name": "Grace Hopper",
+      "links": [
+        {
+          "label": "linktr.ee",
+          "url": "https://linktr.ee/grace"
+        }
+      ],
+      "singleLinkMode": "redirect"
+    },
+    "maxBytes": 82,
+    "payload": "NP___wEMR3JhY2UgSG9wcGVyCAcCD2dyYWNlAA",
+    "bytes": 28,
+    "omitted": [],
+    "decoded": {
+      "v": 1,
+      "type": "links",
+      "id": "ffffff",
+      "name": "Grace Hopper",
+      "links": [
+        {
+          "url": "https://linktr.ee/grace",
+          "label": "linktr.ee"
+        }
+      ],
+      "singleLinkMode": "redirect"
+    }
+  },
+  {
+    "name": "own-link, several links",
+    "card": {
+      "type": "links",
+      "id": "010203",
+      "name": "Alan Turing",
+      "business": "Bletchley",
+      "links": [
+        {
+          "label": "Linktree",
+          "url": "https://linktr.ee/alan"
+        },
+        {
+          "label": "Blog",
+          "url": "https://alan.org/blog"
+        }
+      ],
+      "singleLinkMode": "page"
+    },
+    "maxBytes": null,
+    "payload": "MAECAwELQWxhbiBUdXJpbmcDCUJsZXRjaGxleQgGAg9hbGFuCExpbmt0cmVlCAsCYWxhbhgvYmxvZwRCbG9n",
+    "bytes": 63,
+    "omitted": [],
+    "decoded": {
+      "v": 1,
+      "type": "links",
+      "id": "010203",
+      "name": "Alan Turing",
+      "links": [
+        {
+          "url": "https://linktr.ee/alan",
+          "label": "Linktree"
+        },
+        {
+          "url": "https://alan.org/blog",
+          "label": "Blog"
+        }
+      ],
+      "singleLinkMode": "page",
+      "business": "Bletchley"
+    }
+  }
+]

@@ -1,0 +1,2 @@
+# Every card link is /c#<card data>; the page reads the card from the part after #.
+/c  /profile  200

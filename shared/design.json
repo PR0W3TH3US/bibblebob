@@ -1,0 +1,471 @@
+{
+  "version": 1,
+  "designWidth": 360,
+  "linkPreviewCount": 4,
+  "defaults": {
+    "templateId": "classic",
+    "paletteId": "midnight",
+    "fontId": "inter"
+  },
+  "templates": [
+    {
+      "id": "classic",
+      "name": "Classic",
+      "header": "center",
+      "face": "circle",
+      "links": "pill",
+      "nameSize": 28,
+      "order": [
+        "header",
+        "contact",
+        "description",
+        "links"
+      ]
+    },
+    {
+      "id": "banner",
+      "name": "Banner",
+      "header": "banner",
+      "face": "circle",
+      "links": "pill",
+      "nameSize": 26,
+      "order": [
+        "header",
+        "description",
+        "links",
+        "contact"
+      ]
+    },
+    {
+      "id": "split",
+      "name": "Split",
+      "header": "split",
+      "face": "rounded",
+      "links": "list",
+      "nameSize": 24,
+      "order": [
+        "header",
+        "description",
+        "contact",
+        "links"
+      ]
+    },
+    {
+      "id": "minimal",
+      "name": "Minimal",
+      "header": "left",
+      "face": "circle",
+      "links": "list",
+      "nameSize": 26,
+      "order": [
+        "header",
+        "contact",
+        "links",
+        "description"
+      ]
+    },
+    {
+      "id": "bold",
+      "name": "Bold",
+      "header": "left",
+      "face": "rounded",
+      "links": "grid",
+      "nameSize": 34,
+      "order": [
+        "header",
+        "description",
+        "links",
+        "contact"
+      ]
+    },
+    {
+      "id": "outline",
+      "name": "Outline",
+      "header": "center",
+      "face": "square",
+      "links": "outline",
+      "nameSize": 26,
+      "order": [
+        "header",
+        "description",
+        "links",
+        "contact"
+      ]
+    },
+    {
+      "id": "studio",
+      "name": "Studio",
+      "header": "split",
+      "face": "circle",
+      "links": "outline",
+      "nameSize": 24,
+      "order": [
+        "header",
+        "links",
+        "contact",
+        "description"
+      ]
+    },
+    {
+      "id": "spotlight",
+      "name": "Spotlight",
+      "header": "banner",
+      "face": "rounded",
+      "links": "grid",
+      "nameSize": 28,
+      "order": [
+        "header",
+        "contact",
+        "links",
+        "description"
+      ]
+    }
+  ],
+  "palettes": [
+    {
+      "id": "midnight",
+      "name": "Midnight",
+      "bg": "#101418",
+      "text": "#F3F4F6",
+      "accent": "#60A5FA"
+    },
+    {
+      "id": "paper",
+      "name": "Paper",
+      "bg": "#FAF8F3",
+      "text": "#1F1D1A",
+      "accent": "#C2410C"
+    },
+    {
+      "id": "forest",
+      "name": "Forest",
+      "bg": "#0F1F17",
+      "text": "#ECF5EF",
+      "accent": "#4ADE80"
+    },
+    {
+      "id": "blush",
+      "name": "Blush",
+      "bg": "#FFF1F2",
+      "text": "#3F1D2B",
+      "accent": "#E11D48"
+    },
+    {
+      "id": "ocean",
+      "name": "Ocean",
+      "bg": "#0B2540",
+      "text": "#EAF4FF",
+      "accent": "#38BDF8"
+    },
+    {
+      "id": "mono",
+      "name": "Mono",
+      "bg": "#FFFFFF",
+      "text": "#111111",
+      "accent": "#111111"
+    },
+    {
+      "id": "violet",
+      "name": "Violet",
+      "bg": "#17112A",
+      "text": "#F4F0FF",
+      "accent": "#A78BFA"
+    },
+    {
+      "id": "sand",
+      "name": "Sand",
+      "bg": "#F3E9DC",
+      "text": "#2B2118",
+      "accent": "#8A5A2B"
+    }
+  ],
+  "fonts": [
+    {
+      "id": "inter",
+      "family": "Inter",
+      "package": "inter",
+      "packageVersion": "0.4.2",
+      "weights": [
+        400,
+        700
+      ]
+    },
+    {
+      "id": "poppins",
+      "family": "Poppins",
+      "package": "poppins",
+      "packageVersion": "0.4.1",
+      "weights": [
+        400,
+        700
+      ]
+    },
+    {
+      "id": "montserrat",
+      "family": "Montserrat",
+      "package": "montserrat",
+      "packageVersion": "0.4.2",
+      "weights": [
+        400,
+        700
+      ]
+    },
+    {
+      "id": "space-grotesk",
+      "family": "Space Grotesk",
+      "package": "space-grotesk",
+      "packageVersion": "0.4.1",
+      "weights": [
+        400,
+        700
+      ]
+    },
+    {
+      "id": "playfair",
+      "family": "Playfair Display",
+      "package": "playfair-display",
+      "packageVersion": "0.4.2",
+      "weights": [
+        400,
+        700
+      ]
+    },
+    {
+      "id": "lora",
+      "family": "Lora",
+      "package": "lora",
+      "packageVersion": "0.4.2",
+      "weights": [
+        400,
+        700
+      ]
+    },
+    {
+      "id": "dm-serif",
+      "family": "DM Serif Display",
+      "package": "dm-serif-display",
+      "packageVersion": "0.4.2",
+      "weights": [
+        400
+      ]
+    },
+    {
+      "id": "jetbrains-mono",
+      "family": "JetBrains Mono",
+      "package": "jetbrains-mono",
+      "packageVersion": "0.4.1",
+      "weights": [
+        400,
+        700
+      ]
+    }
+  ],
+  "linkIcons": [
+    {
+      "id": "link",
+      "label": "Link",
+      "mdi": "mdiLinkVariant",
+      "domains": []
+    },
+    {
+      "id": "web",
+      "label": "Website",
+      "mdi": "mdiWeb",
+      "domains": []
+    },
+    {
+      "id": "instagram",
+      "label": "Instagram",
+      "mdi": "mdiInstagram",
+      "domains": [
+        "instagram.com"
+      ]
+    },
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "mdi": "mdiLinkedin",
+      "domains": [
+        "linkedin.com"
+      ]
+    },
+    {
+      "id": "x",
+      "label": "X",
+      "mdi": "mdiTwitter",
+      "domains": [
+        "x.com",
+        "twitter.com"
+      ]
+    },
+    {
+      "id": "facebook",
+      "label": "Facebook",
+      "mdi": "mdiFacebook",
+      "domains": [
+        "facebook.com",
+        "fb.com"
+      ]
+    },
+    {
+      "id": "tiktok",
+      "label": "TikTok",
+      "mdi": "mdiMusicNote",
+      "domains": [
+        "tiktok.com"
+      ]
+    },
+    {
+      "id": "youtube",
+      "label": "YouTube",
+      "mdi": "mdiYoutube",
+      "domains": [
+        "youtube.com",
+        "youtu.be"
+      ]
+    },
+    {
+      "id": "github",
+      "label": "GitHub",
+      "mdi": "mdiGithub",
+      "domains": [
+        "github.com"
+      ]
+    },
+    {
+      "id": "whatsapp",
+      "label": "WhatsApp",
+      "mdi": "mdiWhatsapp",
+      "domains": [
+        "wa.me",
+        "whatsapp.com"
+      ]
+    },
+    {
+      "id": "spotify",
+      "label": "Spotify",
+      "mdi": "mdiSpotify",
+      "domains": [
+        "spotify.com"
+      ]
+    },
+    {
+      "id": "pinterest",
+      "label": "Pinterest",
+      "mdi": "mdiPinterest",
+      "domains": [
+        "pinterest.com"
+      ]
+    },
+    {
+      "id": "calendar",
+      "label": "Booking",
+      "mdi": "mdiCalendar",
+      "domains": [
+        "calendly.com",
+        "cal.com"
+      ]
+    },
+    {
+      "id": "shop",
+      "label": "Shop",
+      "mdi": "mdiStorefront",
+      "domains": [
+        "etsy.com",
+        "shopify.com"
+      ]
+    },
+    {
+      "id": "portfolio",
+      "label": "Portfolio",
+      "mdi": "mdiPalette",
+      "domains": [
+        "behance.net",
+        "dribbble.com"
+      ]
+    },
+    {
+      "id": "document",
+      "label": "Document",
+      "mdi": "mdiFileDocument",
+      "domains": []
+    },
+    {
+      "id": "map",
+      "label": "Location",
+      "mdi": "mdiMapMarker",
+      "domains": [
+        "maps.google.com",
+        "goo.gl"
+      ]
+    }
+  ],
+  "uiIcons": [
+    {
+      "id": "ui-phone",
+      "mdi": "mdiPhone"
+    },
+    {
+      "id": "ui-email",
+      "mdi": "mdiEmail"
+    },
+    {
+      "id": "ui-chevron",
+      "mdi": "mdiChevronRight"
+    },
+    {
+      "id": "ui-more",
+      "mdi": "mdiChevronDown"
+    },
+    {
+      "id": "ui-person",
+      "mdi": "mdiAccount"
+    }
+  ],
+  "limits": {
+    "name": 80,
+    "title": 80,
+    "business": 100,
+    "phone": 40,
+    "email": 254,
+    "description": 500,
+    "linkLabel": 60,
+    "url": 2048,
+    "maxLinks": 20
+  },
+  "link": {
+    "_comment": "Card-in-link format, see shared/LINK_FORMAT.md. ORDER MATTERS: templates, palettes, fonts, linkIcons and dictionary are referenced by index in links already written to tags. Only ever append.",
+    "host": "bibblebob.pages.dev",
+    "path": "/c",
+    "dictionary": [
+      "https://www.",
+      "https://",
+      "www.",
+      "@gmail.com",
+      "linkedin.com/in/",
+      "instagram.com/",
+      "facebook.com/",
+      "x.com/",
+      "tiktok.com/@",
+      "youtube.com/@",
+      "github.com/",
+      "linktr.ee/",
+      "calendly.com/",
+      "wa.me/",
+      "@outlook.com",
+      "@hotmail.com",
+      "@yahoo.com",
+      "@icloud.com",
+      "@proton.me",
+      ".com",
+      ".org",
+      ".net",
+      ".io",
+      ".co.uk",
+      ".de",
+      "spotify.com/",
+      "behance.net/",
+      "pinterest.com/"
+    ]
+  }
+}

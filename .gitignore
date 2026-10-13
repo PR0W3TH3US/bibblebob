@@ -1,0 +1,8 @@
+node_modules/
+.wrangler/
+.dev.vars
+*.jks
+*.keystore
+key.properties
+.DS_Store
+dist/

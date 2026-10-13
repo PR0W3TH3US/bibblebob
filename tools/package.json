@@ -1,0 +1,11 @@
+{
+  "name": "bibblebob-tools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "icons": "node build-icons.mjs"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2"
+  }
+}
